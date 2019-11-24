@@ -7,7 +7,6 @@ import Lists from './fen'
 function Rizhi() {
     return (
         <div className='zyx_home'>
-        Rizhi
         <Lists></Lists>
         </div>
     )
