@@ -24,6 +24,7 @@ function App() {
     <Router>
       <div className='zyx'>
         <div className='zyx_left'>
+          <p className='zyx_p'>地府管理系统</p>
           <ul>
             <li>
               <Link to="/">首页</Link>
