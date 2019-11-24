@@ -4,6 +4,8 @@ import Zx from './zx.js'
 import Bt from './bt.js'
 
 
+
+
 function Home() {
     return (
         <div className='zyx_home'>
@@ -45,14 +47,14 @@ function Home() {
                                 <span className='zyx_bottom_time_span1'>时间：2019年11月2日</span>
                                 <span className='zyx_bottom_time_span2'>地点：地狱十八层</span>
                                 <div className='zyx_bottom_time_img'>
-                                    <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1591033009,497553808&fm=26&gp=0.jpg"/>
-                                    <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=452037148,398661658&fm=26&gp=0.jpg"/>
+                                    <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1591033009,497553808&fm=26&gp=0.jpg" />
+                                    <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=452037148,398661658&fm=26&gp=0.jpg" />
                                     <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3353231824,1868742502&fm=111&gp=0.jpg"></img>
                                 </div>
                             </div>
                             <div className='zyx_bottom_3_bottom'>
-                                PM  6:00  职工聚餐<br/>
-                                PM  11:00  判官高级培训 
+                                PM  6:00  职工聚餐<br />
+                                PM  11:00  判官高级培训
                             </div>
                         </div>
                     </div>

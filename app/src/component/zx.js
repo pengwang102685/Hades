@@ -1,10 +1,10 @@
 import React from 'react'
 import * as Echarts from 'echarts';
-// import 'echarts/lib/chart/pie'
-// import 'echarts/lib/component/tooltip'
-// import 'echarts/lib/component/title'
-// import 'echarts/lib/component/legend'
-// import 'echarts/lib/component/markPoint'
+import 'echarts/lib/chart/pie'
+import 'echarts/lib/component/tooltip'
+import 'echarts/lib/component/title'
+import 'echarts/lib/component/legend'
+import 'echarts/lib/component/markPoint'
 
 
 console.log(Echarts)
