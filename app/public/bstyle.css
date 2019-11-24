@@ -1,0 +1,28 @@
+.list{
+    width: 100%;
+    min-height: 50px;
+}
+ul{
+    padding: 0;
+    margin:0;
+}
+li{
+    list-style: none;
+}
+.list_info{
+    width: 100%;
+    min-height: 50px;
+    overflow: hidden;
+    display: flex; 
+}
+.list_name{
+    flex: 1;
+    float: left;
+    border:solid 1px #ccc;
+    line-height: 50px;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+.list_name_t{
+    margin-top: 0;
+}
