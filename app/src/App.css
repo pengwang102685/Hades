@@ -16,7 +16,8 @@
   float: left;
   width: 100%;
   min-height: 100vh;
-  background: #000c17;
+  background-image: url('./img/bg.jpeg');
+  background-size: cover;
   overflow: hidden;
 }
 .zyx_p{
@@ -45,6 +46,5 @@ a:-webkit-any-link {
 .zyx_right {
   width: 85%;
   float: right;
-  background: pink;
   min-height: 100vh;
 }
