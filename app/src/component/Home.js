@@ -4,6 +4,7 @@ import Zx from './zx.js'
 import Bt from './bt.js'
 import Axios from 'axios'
 import Title from './Hometitile.js'
+import Top from './top.js'
 
 
 
@@ -18,6 +19,7 @@ class Home extends React.Component {
                 '今日入境',
                 '管理员'
             ],
+			imgurl:'',
             function_arr: [
                 {
                     url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u185.png?token=bdf35fd71a455f3c5c32dc8b35f5616373f6acdf777c00f40fc3033ce6b08488',
@@ -74,15 +76,23 @@ class Home extends React.Component {
         Axios.get('http://localhost:8000/shouye').then((data) => {
             // console.log(data.data)
             this.setState({
-                sytitle: data.data
+                sytitle: data.data,
+				imgurl:JSON.parse(sessionStorage.login).data[0].imgurl
             })
         })
+		
+		
     }
+	back() {
+						window.location.href = 'http://localhost:3000';
+						window.sessionStorage.login = '';
+					}
+
     render() {
         // console.log(this.state.sytitle[0])
         return (
             <div className='zyx_home'>
-                <div className='zyx_top'></div>
+				<Top></Top>
                 <div className='zyx_bottom'>
                     <div className='zyx_bottom1'>
                         <div className='zyx_bottom_1'>
