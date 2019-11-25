@@ -114,10 +114,10 @@ class Zsdl extends Component{
                                     </div>
                                 </div>
                                 {/* 这里是登录按钮点击登录请求 */}
-                                <div className="yjr_dluya">
+                                <div className="yjr_dluya" onClick={this.loginIn.bind(this)}>
                                     <div className="yjr_sishen"></div>
                                     <div className="yjr_npsp">
-                                        <p><span onClick={this.loginIn.bind(this)}>登录</span></p>
+                                        <p><span >登录</span></p>
                                     </div>
                                 </div>
                                 {/* 这个功能暂时不知道  目前来看应该就是密码忘记了以通过自己的账号ID 重新修改密码*/}
