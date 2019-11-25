@@ -7,7 +7,7 @@ import 'echarts/lib/component/legend'
 import 'echarts/lib/component/markPoint'
 
 
-console.log(Echarts)
+// console.log(Echarts)
 class Immortals extends React.Component {
     constructor(props) {
         super(props)
@@ -55,7 +55,7 @@ class Immortals extends React.Component {
             },
             series: [
                 {
-                    data: [20, 50, 40, 70, 80, 30, 10, 70, 40],
+                    data: [20, 50, 40, 70, 80, 30, 10, 70, 80],
                     type: 'line',
                     smooth: true,
                     color: 'skyblue',
@@ -78,7 +78,7 @@ class Immortals extends React.Component {
         };
 
         myChart.setOption(option);
-        console.log(myChart.setOption(option))
+        // console.log(myChart.setOption(option))
     }
 }
 
