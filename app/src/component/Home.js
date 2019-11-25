@@ -4,15 +4,6 @@ import Zx from './zx.js'
 import Bt from './bt.js'
 import Axios from 'axios'
 
-// class Some extends Component{
-//     constructor(props){
-//         super(props)
-//         this.state={
-
-
-//         }
-//     }
-// }
 
 
 class Home extends React.Component {
