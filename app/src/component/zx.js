@@ -55,7 +55,7 @@ class Immortals extends React.Component {
             },
             series: [
                 {
-                    data: [20, 50, 40, 70, 80, 30, 10, 70, 40],
+                    data: [20, 50, 40, 70, 80, 30, 10, 70, 80],
                     type: 'line',
                     smooth: true,
                     color: 'skyblue',

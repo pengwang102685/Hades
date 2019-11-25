@@ -3,43 +3,105 @@ import './../component_css/Home.css';
 import Zx from './zx.js'
 import Bt from './bt.js'
 import Axios from 'axios'
+import Title from './Hometitile.js'
 
 
 
 class Home extends React.Component {
-    componentDidMount() {
-        Axios.get('http://localhost:8000/shouye').then((data)=>{
-            console.log(data)
+    constructor(props) {
+        super(props)
+        this.state = {
+            sytitle: '',
+            title: [
+                '地府人数',
+                '今日出境',
+                '今日入境',
+                '管理员'
+            ],
+            function_arr: [
+                {
+                    url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u185.png?token=bdf35fd71a455f3c5c32dc8b35f5616373f6acdf777c00f40fc3033ce6b08488',
+                    text: "生死簿"
+                },
+                {
+                    url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u198.png?token=b6f96e0b0d69a96303bafd492fce7b503e8157d19e8d98b3aca7e72eb4a6858b',
+                    text: "查询寿命"
+                },
+                {
+                    url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u199.png?token=a285e7d5eeb400371222ffca3d6539c0bf5ba4dd7f536f6341339f041698235c',
+                    text: "入境管理"
+                },
+                {
+                    url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u200.png?token=7d45e328db36331248d53d02dfbdc80e64ee925d86b6f49510d286092a68fc17',
+                    text: "重新投胎"
+                },
+                {
+                    url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u201.png?token=e16733b5d825544ffb38ffd779edd3e30e396359435c8e3ccf49c74b2bc94465',
+                    text: "货币管理"
+                },
+                {
+                    url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u185.png?token=bdf35fd71a455f3c5c32dc8b35f5616373f6acdf777c00f40fc3033ce6b08488',
+                    text: "操作日志"
+                },
+                {
+                    url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u198.png?token=b6f96e0b0d69a96303bafd492fce7b503e8157d19e8d98b3aca7e72eb4a6858b',
+                    text: "十八地狱"
+                },
+                {
+                    url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u199.png?token=a285e7d5eeb400371222ffca3d6539c0bf5ba4dd7f536f6341339f041698235c',
+                    text: "发勾魂单"
+                },
+                {
+                    url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u200.png?token=7d45e328db36331248d53d02dfbdc80e64ee925d86b6f49510d286092a68fc17',
+                    text: "资产管理"
+                },
+                {
+                    url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u201.png?token=e16733b5d825544ffb38ffd779edd3e30e396359435c8e3ccf49c74b2bc94465',
+                    text: "员工管理"
+                },
+                {
+                    url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u185.png?token=bdf35fd71a455f3c5c32dc8b35f5616373f6acdf777c00f40fc3033ce6b08488',
+                    text: "营销管理"
+                },
+                {
+                    url: 'http://cloud.axureshop.com/gsc/1IZGNL/52/e4/77/52e4779c0d8d4a0c9ac6c2283464471d/images/首页/u200.png?token=7d45e328db36331248d53d02dfbdc80e64ee925d86b6f49510d286092a68fc17',
+                    text: "百鬼夜行"
+                },
+            ]
+        }
+    }
+    componentWillMount() {
+        Axios.get('http://localhost:8000/shouye').then((data) => {
+            // console.log(data.data)
+            this.setState({
+                sytitle: data.data
+            })
         })
     }
     render() {
+        // console.log(this.state.sytitle[0])
         return (
             <div className='zyx_home'>
                 <div className='zyx_top'></div>
                 <div className='zyx_bottom'>
                     <div className='zyx_bottom1'>
                         <div className='zyx_bottom_1'>
-                            <div className='zyx_bottom_1_one'>
-                                <p className='zyx_bottom1_p'>地府人数</p>
-                                <p className='zyx_bottom1_p1'>1986</p>
-                            </div>
-                            <div className='zyx_bottom_1_two'>
-                                <p className='zyx_bottom1_p'>今日入境</p>
-                                <p className='zyx_bottom1_p1'>10</p>
-                            </div>
-                            <div className='zyx_bottom_1_three'>
-                                <p className='zyx_bottom1_p'>今日出境</p>
-                                <p className='zyx_bottom1_p1'>16</p>
-                            </div>
-                            <div className='zyx_bottom_1_four'>
-                                <p className='zyx_bottom1_p'>管理员</p>
-                                <p className='zyx_bottom1_p1'>100</p>
-                            </div>
+                            <Title comment={this.state.sytitle} title={this.state.title}></Title>
                         </div>
                         <div className='zyx_bottom_2'>
                             <div className='zyx_zx_div'><p className='zyx_zy_p'>常用导航功能</p><p className='zyx_zy_span'><span className='zyx_zy_span1'>···</span></p></div>
                             <div className='zyx_bottom_2_yuan'>
-                                <div className='zyx_bottom_2_yuan1'></div>
+
+                                {this.state.function_arr.map((item, index) => {
+                                    return (
+                                        <div className="function-icon" key={index}>
+                                            <div className="zyx_bottom_2_yuan1">
+                                                <img src={item.url} alt="" className="item-img" />
+                                            </div>
+                                            <p>{item.text}</p >
+                                        </div>
+                                    )
+                                })}
                             </div>
                         </div>
                         <div className='zyx_bottom_3'>
@@ -59,8 +121,8 @@ class Home extends React.Component {
                                     </div>
                                 </div>
                                 <div className='zyx_bottom_3_bottom'>
-                                    PM  6:00  职工聚餐<br />
-                                    PM  11:00  判官高级培训
+                                    <p>PM  6:00  职工聚餐</p>
+                                    <p className='p_3'>PM  11:00  判官高级培训</p>
                             </div>
                             </div>
                         </div>
