@@ -8,7 +8,7 @@ import 'echarts/lib/component/title'
 import 'echarts/lib/component/legend'
 import 'echarts/lib/component/markPoint'
 
-console.log(Echarts)
+// console.log(Echarts)
 class Immortals extends React.Component {
     constructor(props) {
         super(props)
@@ -65,7 +65,7 @@ class Immortals extends React.Component {
         };
 
         myChart.setOption(option);
-        console.log(myChart.setOption(option))
+        // console.log(myChart.setOption(option))
     }
 }
 
