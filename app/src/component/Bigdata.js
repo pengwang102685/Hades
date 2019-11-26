@@ -1,5 +1,6 @@
 import React from 'react';
 import './../component_css/Bigdata.css';
+import Tj from './tj.js';
 
 
 
@@ -60,8 +61,8 @@ function Bigdata() {
                 <p className='title'><span></span>地府工作人员业绩统计</p>
               </div>
               <div className='stat'>
-                
                 <p className='title'><span></span>冥币汇率变化</p>
+                <Tj></Tj>
               </div>
               <div className='stat'>
                
