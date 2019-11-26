@@ -19,6 +19,7 @@ import Syt from './component/Syt.js'
 import Gly from './component/Gly.js'
 import Role from './component/Role.js'
 import Zsdl from './component/zsdl.js'
+import Bigdata from './component/Bigdata.js'
 
 class App extends React.Component {
 	constructor() {
@@ -43,6 +44,9 @@ class App extends React.Component {
             <li>
               <Link to="/z">首页</Link>
             </li>
+			<li>
+			  <Link to="/Bigdata">地府大数据</Link>
+			</li>
             <li>
               <Link to='/Obituary'>生死簿</Link>
             </li>
@@ -85,6 +89,9 @@ class App extends React.Component {
             <Route  exact path="/z" >
               <Home />
             </Route>
+			<Route  exact path="/Bigdata" >
+			  <Bigdata />
+			</Route>
             <Route path='/Obituary'>
               <Obituary/>
             </Route>

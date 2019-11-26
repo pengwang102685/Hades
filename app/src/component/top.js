@@ -25,7 +25,7 @@ class Top extends React.Component {
                         <p onClick={this.back.bind(this)}>退出</p>
                     </div>
                     <div className='zyx_top_zh'>
-                        <p>账户名称</p>
+                        <p>1号管理员</p>
                         <div className='zyx_top_img'>
                             <img src={this.state.imgurl} />
                         </div>

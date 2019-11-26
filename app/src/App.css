@@ -32,6 +32,8 @@
   float: left;
   min-height: 100vh;
   background: #001529;
+  overflow: hidden;
+  height: 842px;
 }
 .zyx_left ul li{
   width: 100%;

@@ -1,0 +1,200 @@
+.bcg{
+    min-height: 800px;
+    background:url('img/4.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .top{
+    line-height: 72px;
+    background: #000;
+    padding: 0 20px;
+    color: #fff;
+    display: flex;
+  }
+  .top span{
+    padding:0 20px;
+  }
+  .content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0 0px 10px;
+    box-sizing: border-box;
+  }
+  .color{
+    color: #00ffcc;
+  }
+  .color2{
+    color: #ff9900;
+  }
+  .color3{
+    color: #ff0033;
+  }
+  .num{
+    width: 210px;
+    height: 90px;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .5);
+    position: relative;
+  }
+  .bum{
+    background: rgba(0, 0, 0, .5);
+    position: relative;
+    margin-top: 10px;
+  }
+  .num p{
+    font-size: 13px;
+  }
+  .num h3{
+    font-size: 28px;
+    line-height: 60px;
+  }
+  .num1,.num2,.num3,.num4{
+    border: 2px solid #ccc;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+  }
+  .num1{
+    left: 0;
+    top: 0;
+    border-bottom:transparent; 
+    border-right: transparent;
+  }
+  .num2{
+    right: 0;
+    top: 0;
+    border-bottom:transparent; 
+    border-left: transparent;
+  }
+  .num3{
+    bottom: 0;
+    left: 0;
+    border-top:transparent; 
+    border-right: transparent;
+  }
+  .num4{
+    bottom: 0;
+    right: 0;
+    border-top:transparent; 
+    border-left: transparent;
+  }
+  .bum1,.bum2,.bum3,.bum4{
+    border: 2px solid #ccc;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+  }
+  .bum1{
+    left: 0;
+    top: 0;
+    border-bottom:transparent; 
+    border-right: transparent;
+  }
+  .bum2{
+    right: 0;
+    top: 0;
+    border-bottom:transparent; 
+    border-left: transparent;
+  }
+  .bum3{
+    bottom: 0;
+    left: 0;
+    border-top:transparent; 
+    border-right: transparent;
+  }
+  .bum4{
+    bottom: 0;
+    right: 0;
+    border-top:transparent; 
+    border-left: transparent;
+  }
+  .content ul{
+    height: 474px;
+    width: 210px;
+  }
+  .sex{
+    width: 300px;
+    height: 190px;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  .sex h5{
+    line-height: 60px;
+    text-align: center;
+    font-size: 13px;
+  }
+  .man{
+    height: 90px;
+    display: flex;
+    text-align: center;
+  }
+  .male{
+    width: 50%;
+    border-right: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  .female{
+    width: 50%;
+    padding-top: 20px;
+    
+  }
+  .man span{
+    font-size: 13px;
+  }
+  .man p{
+    font-size: 24px;
+  }
+  .stat{
+    width: 324px;
+    height: 240px;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, .5);
+    position: relative;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: #fff;
+  }
+  .stat h4{
+    font-size: 10px;
+    text-align: left;
+  }
+  .value{
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .value span{
+    font-size: 13px;
+  }
+  .date{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 10px;
+    color: #fff;
+    background: #333; 
+  }
+  .title{
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    padding: 0 10px;
+    position: absolute;
+    left: -160px;
+    top: 100px;
+    transform: rotate(90deg);
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .5);
+  }
+  .title span{
+    width: 5px;
+    margin: -3px 5px;
+    height: 16px;
+    background: #00ffcc;
+    line-height: 40px;
+    display: inline-block;
+  }
+  
