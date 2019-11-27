@@ -8,14 +8,14 @@ import 'echarts/lib/component/title'
 import 'echarts/lib/component/legend'
 import 'echarts/lib/component/markPoint'
 
-console.log(Echarts)
+// console.log(Echarts)
 class Immortals extends React.Component {
     constructor(props) {
         super(props)
     }
     render() {
         return (
-            <div id="bt" style={{ width: '100%', height: 250, }}></div>
+            <div id="bt" style={{ width: '100%', height: 200, }}></div>
         )
     }
     componentDidMount() {
@@ -34,7 +34,7 @@ class Immortals extends React.Component {
                 {
                     name: '访问来源',
                     type: 'pie',
-                    radius: ['30%', '70%'],
+                    radius: ['25%', '60%'],
                     avoidLabelOverlap: false,
                     label: {
                         normal: {
@@ -55,17 +55,28 @@ class Immortals extends React.Component {
                         }
                     },
                     data: [
-                        { value: 335, name: '1' },
+                        { value: 1600, name: '1' },
                         { value: 310, name: '2' },
                         { value: 234, name: '3' },
-                        { value: 135, name: '4' },
-                    ]
+                        { value: 500, name: '4' },
+                    ],
+                    itemStyle:{
+                        normal:{
+                            color:function(params) {
+                            //自定义颜色
+                            var colorList = [          
+                                    'blue', 'green', 'orange', 'red'
+                                ];
+                                return colorList[params.dataIndex]
+                             }
+                        }
+                    }
                 }
             ]
         };
 
         myChart.setOption(option);
-        console.log(myChart.setOption(option))
+        // console.log(myChart.setOption(option))
     }
 }
 

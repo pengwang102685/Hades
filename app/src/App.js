@@ -18,17 +18,35 @@ import Rizhi from './component/Rizhi.js'
 import Syt from './component/Syt.js'
 import Gly from './component/Gly.js'
 import Role from './component/Role.js'
+import Zsdl from './component/zsdl.js'
+import Bigdata from './component/Bigdata.js'
 
-function App() {
+class App extends React.Component {
+	constructor() {
+	  super();
+	}
+	
+	componentDidMount(){
+		if(sessionStorage.login){
+			this.refs.nav.style.display="block"
+		}else{
+			this.refs.nav.style.display="none"
+		}
+	}
+	render() {
   return (
     <Router>
       <div className='zyx'>
-        <div className='zyx_left'>
+        <div className='zyx_left' ref="nav">
+		
           <p className='zyx_p'>地府管理系统</p>
-          <ul>
+          <ul> 
             <li>
-              <Link to="/">首页</Link>
+              <Link to="/z">首页</Link>
             </li>
+			<li>
+			  <Link to="/Bigdata">地府大数据</Link>
+			</li>
             <li>
               <Link to='/Obituary'>生死簿</Link>
             </li>
@@ -61,11 +79,19 @@ function App() {
             </li>
           </ul>
         </div>
+		
+		
         <div className='zyx_right'>
           <Switch>
-            <Route  exact path="/" >
+		  <Route  exact path="/" >
+		    <Zsdl />
+		  </Route>
+            <Route  exact path="/z" >
               <Home />
             </Route>
+			<Route  exact path="/Bigdata" >
+			  <Bigdata />
+			</Route>
             <Route path='/Obituary'>
               <Obituary/>
             </Route>
@@ -101,7 +127,8 @@ function App() {
         </div>
       </div>
     </Router>
-  );
+  )
+  }
 }
 
 export default App;
