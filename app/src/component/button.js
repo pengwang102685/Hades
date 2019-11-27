@@ -37,7 +37,6 @@ class pageButton extends Component {
             })
         }
     }
-
     render() {
         return (
             <div className="change_page">

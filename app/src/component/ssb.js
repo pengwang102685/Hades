@@ -1,48 +1,14 @@
 import React,{Component} from 'react';
-import List from './lb'
+import List from './lb3'
 import PageButton from './button'
 
 const listData = [{
-    name:'秦广网',
-    cz:'删除生死簿用户',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
+    id:'魂字1350号',
+    name:'孙悟空',
+    sui:'342岁',
+    lie:'天产石猴',
+    fs:'善终',
+    zhixing:'撤销 编辑 彻底删除',
 },
 ]
 

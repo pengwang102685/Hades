@@ -1,49 +1,23 @@
 import React,{Component} from 'react';
-import List from './lb'
+import List from './lb2'
 import PageButton from './button'
 
 const listData = [{
-    name:'秦广网',
-    cz:'删除生死簿用户',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
+    name:'***',
+    money:'3万亿',
+    beizu:'忌日快乐',
+    name1:'***',
+    dd:'未知',
+    time:'第一年'
 },
 {
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
+    name:'***',
+    money:'3万亿',
+    beizu:'忌日快乐2',
+    name1:'***',
+    dd:'未知',
+    time:'第二年'
+}
 ]
 
 class listBox extends Component {

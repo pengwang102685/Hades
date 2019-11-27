@@ -1,48 +1,15 @@
 import React,{Component} from 'react';
-import List from './lb'
+import List from './lb1'
 import PageButton from './button'
 
 const listData = [{
-    name:'秦广网',
-    cz:'删除生死簿用户',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
-},
-{
-    name:'秦广网',
-    cz:'操作',
-    beizu:'了账了账鸡蛋不服你关了',
-    riqi:'东汉末年某月',
-    zhixing:'撤销',
+    id:'皇字第一号',
+    name:'李世民',
+    gh:'牛头、马面',
+    time:'贞观十年三月',
+    liyou:'阳寿未尽，抓错人了',
+    tdr:'十殿阎王',
+    times:'贞观十年三月'
 },
 ]
 
