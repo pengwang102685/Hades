@@ -1,19 +1,5 @@
 import React,{Component} from 'react';
 import './../component_css/Erotic.css';
-<<<<<<< HEAD
-import Top from './top'
-
-
-
-class Erotic extends React.Component {
-    constructor() {
-        super()
-
-    }
-    render() {
-        return(
-            <div>勾魂</div>
-=======
 import Lists from './goulist'
 import Axios from 'axios'
 
@@ -72,7 +58,6 @@ class Erotic extends Component {
                     </div>
                 </div>
             </div>
->>>>>>> a36d4821907e15b70d16fd78d05e81b76fd70a9d
         )
     }
 }
