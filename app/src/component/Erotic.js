@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import './../component_css/Erotic.css';
 import Lists from './goulist'
-
+import Axios from 'axios'
 
 class Erotic extends Component {
     constructor(props){
@@ -10,7 +10,17 @@ class Erotic extends Component {
             title:['未处理','勾魂中','孟婆验收','退单'],
             index:0,
             arr_title:["ID","姓名","勾魂使者","勾魂时间","退单理由","退单人","退单时间"],
+            arr:[],
         }
+    }
+    componentWillMount(){
+        Axios.get('http://localhost:8000/tui/tui').then((data) => {
+            // console.log(data.data)
+            this.setState({
+                arr: data.data
+            })
+            // console.log(this.state.arr)
+        })
     }
     btn(i){
         this.setState({index:i})
@@ -44,7 +54,7 @@ class Erotic extends Component {
                         <div className="list_info">
                             {jsxa}
                         </div>
-                        <Lists/>
+                        <Lists cent={this.state.arr}/>
                     </div>
                 </div>
             </div>

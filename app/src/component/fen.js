@@ -56,7 +56,7 @@ class listBox extends Component {
             indexList:[],//当前渲染的页面数据
             totalData:listData,
             current: 1, //当前页码
-            pageSize:10, //每页显示的条数
+            pageSize:5, //每页显示的条数
             goValue:0,  //要去的条数index
             totalPage:0,//总页数
         };
@@ -78,17 +78,10 @@ class listBox extends Component {
         this.setPage(num)
     }
     render() {
-<<<<<<< HEAD
-        const {index} = this.props
-        return (
-            <div className="main">
-                <div>{this.props.index}</div>
-=======
         
         return (
             <div className="main">
                 
->>>>>>> 8ee8e5981ea3fc1d8d95340582d99c0343f59e36
                 <div className="lists">
                     <ul className="index">
                     {this.state.indexList.map(function (cont,n) {
