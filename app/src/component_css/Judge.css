@@ -9,18 +9,19 @@
 }
 .box_a{
 	width: 100%;
-	height: 920px;
+	padding: 20px 0 0;
+	box-sizing: border-box;
+	height: 792px;
+	box-sizing: border-box;
 	background: rgb(240, 242, 245);
 	position: relative;
 }
 .box_top{
 	width: 95%;
-	height: 800px;
+	padding: 20px 0;
 	background: rgb(255, 255, 255);
-	margin-left: 25px;
-	position: absolute;
+	margin: 0 auto;
 	border: 1px solid rgba(228, 228, 228, 1);
-	top: 20px;	
 }
 .box_t{
 	width: 99%;
@@ -61,7 +62,6 @@
     line-height: 20px;
     font-size: 13px;
     color: #333333;
-    text-align: center;
     margin-top: 20px;
 }
 .main_a ul li span,.box_top p:hover{
@@ -84,7 +84,7 @@
 .box_bottom span{
 	margin-left: 120px;
 	position: absolute;
-	bottom: 90px;
+	bottom: 44px;
 	font-family: 'Arial Normal', 'Arial';
     font-weight: 400;
     font-size: 13px;

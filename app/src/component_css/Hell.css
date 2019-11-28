@@ -3,12 +3,12 @@
     background: rgba(240, 242, 245, 1);
     overflow: hidden;
     min-height: 790px;
-    padding: 20px;
+    padding:0 20px 0;
 }
 .zstai{
     background: white;
     min-height: 680px;
-    padding: 10px;
+    padding:0 10px 0;
 }
 .zstop{
     padding: 30px;
@@ -16,8 +16,8 @@
 }
 .zsitem{
     border: 1px solid;
-    width: 20%;
-    margin-right: 20px;
+    width: 19%;
+    margin-right: 12px;
     margin-bottom: 30px;
 }
 .zsitemtop{
