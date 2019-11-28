@@ -68,12 +68,12 @@ class App extends React.Component {
             <li>
               <Link to='/Rizhi'>日志管理</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to='/Syt'>系统管理</Link>
             </li>
             <li>
               <Link to='/Gly'>管理员</Link>
-            </li>
+            </li> */}
             <li>
               <Link to='/Role'>角色权限</Link>
             </li>
