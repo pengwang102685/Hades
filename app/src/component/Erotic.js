@@ -1,11 +1,18 @@
 import React from 'react';
 import './../component_css/Erotic.css';
+import Top from './top'
 
 
 
-function Erotic() {
-    return (
-        <div className='zyx_home'>Erotic</div>
-    )
+class Erotic extends React.Component {
+    constructor() {
+        super()
+
+    }
+    render() {
+        return(
+            <div>勾魂</div>
+        )
+    }
 }
 export default Erotic

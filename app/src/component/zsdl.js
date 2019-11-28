@@ -31,7 +31,6 @@ class Zsdl extends Component{
 	  });
 	}
 	loginIn() {
-		console.log(333)
 	  var data = {
 	    user: this.state.user,
 	    pass: this.state.pass

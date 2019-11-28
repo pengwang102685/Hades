@@ -1,0 +1,63 @@
+.zscon{
+    width: 100%;
+    background: rgba(240, 242, 245, 1);
+    overflow: hidden;
+    min-height: 790px;
+    padding: 20px;
+}
+.zstai{
+    background: white;
+    min-height: 680px;
+    padding: 10px;
+}
+.zstop{
+    padding: 30px;
+
+}
+.zsitem{
+    border: 1px solid;
+    width: 20%;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.zsitemtop{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.zsitemtop>div:nth-of-type(1){
+    font-size: 13px;
+}
+.zsitemtop>div:nth-of-type(2){
+    font-size: 13px;
+    color: #00CC99;
+}
+.zsitemtop1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.zsitemtop1>div:nth-of-type(1){
+    font-size: 13px;
+    color: #999999;
+}
+.zsitemtop1>div:nth-of-type(2){
+    font-size: 13px;
+    color: #999999;
+}
+.zsitemcon{
+    min-height: 150px;
+    background: #cccccc;
+    margin:  20px 0;
+}
+.zsitembot{
+    line-break: 100px;
+    text-align: center;
+    color: #0099FF;
+    font-size: 13px;
+    padding: 20px;
+}
+.zsitemz{
+    display: flex;
+    flex-wrap: wrap;
+}
