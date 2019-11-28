@@ -78,10 +78,8 @@ class listBox extends Component {
         this.setPage(num)
     }
     render() {
-        
         return (
             <div className="main">
-                
                 <div className="lists">
                     <ul className="index">
                     {this.state.indexList.map(function (cont,n) {
