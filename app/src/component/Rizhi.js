@@ -32,7 +32,7 @@ class Rizhi extends Component {
         return(
             <div className='zyx_home'>
                 <div className="czh_top"></div>
-                <div className="czh_bottom">
+                <div className="czh_bottom" >
                     <div className="czh_bcontent">
                         <div className="czh_title">日志管理</div>
                         <div className="czh_rizi"> 
