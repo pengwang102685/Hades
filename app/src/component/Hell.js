@@ -7,6 +7,7 @@ class Hell extends React.Component {
     constructor() {
         super()
 
+<<<<<<< HEAD
     }
     render() {
         var arr = [1, 2, 3, 4, 5, 6,7]
@@ -44,5 +45,12 @@ class Hell extends React.Component {
             </div>
         )
     }
+=======
+function Hell() {
+    return (
+        <div className='zyx_home'>
+        </div>
+    )
+>>>>>>> a36d4821907e15b70d16fd78d05e81b76fd70a9d
 }
 export default Hell

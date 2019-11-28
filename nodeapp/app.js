@@ -7,8 +7,12 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/login');
+<<<<<<< HEAD
 var zskRouter=require('./routes/zsk')
 
+=======
+var tuiRouter = require('./routes/tui');
+>>>>>>> a36d4821907e15b70d16fd78d05e81b76fd70a9d
 var app = express();
 
 
@@ -61,8 +65,12 @@ app.use((req, res, next) => {
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/login', loginRouter);
+<<<<<<< HEAD
 app.use('/zsk',zskRouter)
 
+=======
+app.use('/tui', tuiRouter);
+>>>>>>> a36d4821907e15b70d16fd78d05e81b76fd70a9d
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

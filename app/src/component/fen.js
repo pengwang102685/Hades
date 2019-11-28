@@ -105,7 +105,7 @@ class listBox extends Component {
             indexList:[],//当前渲染的页面数据
             totalData:listData,
             current: 1, //当前页码
-            pageSize:10, //每页显示的条数
+            pageSize:5, //每页显示的条数
             goValue:0,  //要去的条数index
             totalPage:0,//总页数
         };
